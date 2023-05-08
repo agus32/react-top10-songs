@@ -4,6 +4,7 @@
 .charts-top-featured-alt.\/\/.lrv-a-wrapper.lrv-u-padding-lr-00\@mobile-max.u-padding-b-350\@tablet.u-padding-b-250.u-max-width-792.lrv-u-margin-lr-auto.lrv-a-grid.a-cols2\@tablet.u-grid-gap-250\@tablet.u-grid-gap-0 {
     display: flex;
     justify-content: center;
+    padding-top: 2.5rem;
 }
 *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;}
 img{max-width:100%;height:auto;}

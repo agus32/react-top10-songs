@@ -1,14 +1,17 @@
 import React from "react";
 import "./TopOne.css";
 
-export const TopOne = () =>{
+export const TopOne = ({topone}) =>{
+
+	const {artist,last_week,song_name,song_photo,song_url,weeks_at_top_1,weeks_on_chart} = topone;
+	console.log(artist);
     return(
         
     <div className="charts-top-featured-alt // lrv-a-wrapper lrv-u-padding-lr-00@mobile-max u-padding-b-350@tablet u-padding-b-250 u-max-width-792 lrv-u-margin-lr-auto lrv-a-grid a-cols2@tablet u-grid-gap-250@tablet u-grid-gap-0">
 			
     <div className="c-lazy-image  u-hidden@mobile-max">	
 			<div className="lrv-a-crop-1x1" >	
-				<img className="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto" src="https://charts-static.billboard.com/img/2023/04/kepersonajes-000-unfindebigonecrossover2-rmb-344x344.jpg" alt="Lazy loaded image" height="" width="" decoding="async" data-lazy-loaded="1"/>			
+				<img className="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto" src={song_photo} alt="Lazy loaded image" height="" width="" decoding="async" data-lazy-loaded="1"/>			
 			</div>	
 	</div>
 	
@@ -19,11 +22,11 @@ export const TopOne = () =>{
 					<div className="a-font-primary-bold lrv-u-padding-r-150 lrv-u-padding-r-075@mobile-max u-font-size-102 u-font-size-87@tablet u-line-height-125 u-line-height-1@mobile-max u-margin-t-n125@tablet">1</div>
 					<div>
 					<h3 id="" className="c-title  a-font-primary-bold-l a-font-primary-bold-m@mobile-max lrv-u-color-black u-color-white@mobile-max lrv-u-margin-r-150">	
-                        <a href="#" className="c-title__link lrv-a-unstyle-link">	
-                        Un Finde: Big One CROSSOVER #2		
+                        <a href={song_url} className="c-title__link lrv-a-unstyle-link">	
+                        {song_name}		
                         </a>
                     </h3>												
-	<p className="c-tagline  a-font-primary-l a-font-primary-m@mobile-max lrv-u-color-black u-color-white@mobile-max lrv-u-margin-tb-00 lrv-u-padding-t-025 lrv-u-margin-r-150">Ke personajes X Big One X FMK</p>
+	<p className="c-tagline  a-font-primary-l a-font-primary-m@mobile-max lrv-u-color-black u-color-white@mobile-max lrv-u-margin-tb-00 lrv-u-padding-t-025 lrv-u-margin-r-150">{artist}</p>
                     </div>
 				    </div>
 			    </div>
@@ -33,7 +36,7 @@ export const TopOne = () =>{
 	
 			<div className="lrv-a-crop-1x1 u-width-120@mobile-max" >
 	
-						<img className="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto" src="https://charts-static.billboard.com/img/2023/04/kepersonajes-000-unfindebigonecrossover2-rmb-180x180.jpg" alt="Lazy loaded image" height="" width="" decoding="async" data-lazy-loaded="1"/>
+						<img className="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto" src={song_photo} alt="Lazy loaded image" height="" width="" decoding="async" data-lazy-loaded="1"/>
 			
 			</div>
 	
@@ -46,8 +49,8 @@ export const TopOne = () =>{
 	<div className="js-tabs-nav js-tabs-nav--charts-top lrv-u-flex lrv-u-justify-content-space-between u-justify-content-space-around@mobile-max  lrv-u-padding-b-00@mobile-max" data-tabs-nav="">
 					<button className="c-tab // lrv-u-display-inline-block lrv-a-unstyle-button lrv-a-hover-effect lrv-u-whitespace-nowrap a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-u-cursor-pointer active" data-tabs-target="tab_1">
 	Stats</button>
-					<button className="c-tab // lrv-u-display-inline-block lrv-a-unstyle-button lrv-a-hover-effect lrv-u-whitespace-nowrap a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-u-cursor-pointer" data-tabs-target="tab_5">
-	Share</button>
+		<a href="/posts"><button className="c-tab // lrv-u-display-inline-block lrv-a-unstyle-button lrv-a-hover-effect lrv-u-whitespace-nowrap a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-u-cursor-pointer" data-tabs-target="tab_5">
+	Share</button> </a>
 			</div>
 
 			
@@ -62,7 +65,7 @@ export const TopOne = () =>{
 	
 						<span className="c-label  a-font-primary-bold-xxl lrv-u-padding-lr-1 lrv-u-padding-t-025">
 	
-	1
+	{last_week}
 </span>
 	</div>
 					
@@ -73,7 +76,7 @@ export const TopOne = () =>{
 	
 						<span className="c-label  a-font-primary-bold-xxl lrv-u-padding-lr-1 lrv-u-padding-t-025">
 	
-	2
+	{weeks_at_top_1}
 </span>
 	</div>
 					
@@ -84,7 +87,7 @@ export const TopOne = () =>{
 	
 						<span className="c-label  a-font-primary-bold-xxl lrv-u-padding-lr-1 lrv-u-padding-t-025">
 	
-	4
+	{weeks_on_chart}
 </span>
 	</div>
 			</div>
