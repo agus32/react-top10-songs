@@ -170,7 +170,7 @@ iframe{max-width:100%;}
 }
 @media (min-width: 48rem){
 .u-font-size-20\@tablet{font-size:1.25rem;}
-.lrv-u-padding-t-150{padding-left:1.5rem;padding-right:1.5rem;}
+.lrv-u-padding-t-150{padding-left:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;}
 }
 @media (min-width: 48rem){
 .u-font-size-32\@tablet{font-size:2rem;}
@@ -271,7 +271,7 @@ iframe{max-width:100%;}
 .a-chart-image{background-position:50% 50%;background-repeat:no-repeat;background-size:cover;}
 .a-chart-image .c-lazy-image{z-index:3;}
 .a-chart-image::after{content:"";background:rgba(16,17,25,.65);position:absolute;top:0;bottom:0;left:0;right:0;}
-.a-chart-has-chart-detail{cursor:pointer;}
+/*!.a-chart-has-chart-detail{cursor:pointer;}*/
 .o-chart-credits p:last-child{margin-bottom:0;}
 /*! CSS Used from: https://www.billboard.com/wp-content/plugins/pmc-plugins/pmc-adm-v2/css/pmc-adm-style.min.css?ver=2023.2 ; media=all */
 @media all{

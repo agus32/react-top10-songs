@@ -3,7 +3,7 @@ import "./TopTable.css";
 
 export const TopTable = ({top}) =>{
 
-	
+	console.log(top);
     return(
         
         <div className="chart-results-list // lrv-u-padding-t-150 lrv-u-padding-t-050@mobile-max">
@@ -105,14 +105,13 @@ export const TopTable = ({top}) =>{
 </h3>
 			
 							
-	<p className="c-tagline  a-font-primary-s lrv-u-color-black lrv-u-margin-a-00">click to see more</p>
+	
 
 					</div>
 	</div>
 
 			
-<a className="c-link  a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-a-icon-after a-icon-after-10 lrv-a-icon-arrow-right lrv-u-color-brand-accent-red lrv-u-flex lrv-u-justify-content-center" href="https://www.billboard.com/billboard-charts-legend/">
-	SEE CHARTS LEGEND</a>
+
 	</div>
 			</div>
 		</div>
@@ -131,7 +130,7 @@ export const TopTable = ({top}) =>{
 	
 <span className="c-span  a-font-primary-medium-xxs u-font-size-11@mobile-max u-letter-spacing-00 u-line-height-125 lrv-u-display-block">
 
-	Peak Pos.
+	Weeks at no. 1
 </span>
 
 	</div>
@@ -188,13 +187,13 @@ export const TopTable = ({top}) =>{
 	
 	
 		
-					Un Finde: Big One CROSSOVER #2		
+					{top[0].song_name}
 	
 </h3>
 					
 														<span className="c-label  a-no-trucate a-font-primary-s lrv-u-font-size-14@mobile-max u-line-height-normal@mobile-max u-letter-spacing-0021 lrv-u-display-block a-truncate-ellipsis-2line u-max-width-330 u-max-width-230@tablet-only u-font-size-20@tablet">
 	
-	Ke personajes X Big One X FMK
+	{top[0].artist}
 </span>
 									</li>
 
@@ -208,21 +207,21 @@ export const TopTable = ({top}) =>{
 									<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	1
+	{top[0].last_week}
 </span>
 					</li>
 				
 									<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	1
+	{top[0].weeks_at_top_1}
 </span>
 					</li>
 				
 									<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	4
+	{top[0].weeks_on_chart}
 </span>
 					</li>
 				
@@ -239,21 +238,21 @@ export const TopTable = ({top}) =>{
 															<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	1
+	{top[0].last_week}
 </span>
 								</li>
 							
 															<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	1
+	{top[0].weeks_at_top_1}
 </span>
 								</li>
 							
 															<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	4
+	{top[0].weeks_on_chart}
 </span>
 								</li>
 							
@@ -434,13 +433,13 @@ export const TopTable = ({top}) =>{
 	
 	
 		
-					M.A (Mejores Amigos)		
+					{top[1].song_name}	
 	
 </h3>
 					
 														<span className="c-label  a-no-trucate a-font-primary-s lrv-u-font-size-14@mobile-max u-line-height-normal@mobile-max u-letter-spacing-0021 lrv-u-display-block a-truncate-ellipsis-2line u-max-width-330 u-max-width-230@tablet-only">
 	
-	BM
+	{top[1].artist}	
 </span>
 									</li>
 
@@ -454,21 +453,21 @@ export const TopTable = ({top}) =>{
 									<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	2
+	{top[1].last_week}	
 </span>
 					</li>
 				
 									<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	1
+	{top[1].weeks_at_top_1}	
 </span>
 					</li>
 				
 									<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	21
+	{top[1].weeks_on_chart}	
 </span>
 					</li>
 				
@@ -485,21 +484,21 @@ export const TopTable = ({top}) =>{
 															<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	2
+	{top[1].last_week}
 </span>
 								</li>
 							
 															<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	1
+	{top[1].weeks_at_top_1}
 </span>
 								</li>
 							
 															<li className="o-chart-results-list__item // a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-background-color-white-064@mobile-max lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	21
+	{top[1].weeks_on_chart}	
 </span>
 								</li>
 							

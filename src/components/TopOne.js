@@ -22,7 +22,7 @@ export const TopOne = ({topone}) =>{
 					<div className="a-font-primary-bold lrv-u-padding-r-150 lrv-u-padding-r-075@mobile-max u-font-size-102 u-font-size-87@tablet u-line-height-125 u-line-height-1@mobile-max u-margin-t-n125@tablet">1</div>
 					<div>
 					<h3 id="" className="c-title  a-font-primary-bold-l a-font-primary-bold-m@mobile-max lrv-u-color-black u-color-white@mobile-max lrv-u-margin-r-150">	
-                        <a href={song_url} className="c-title__link lrv-a-unstyle-link">	
+                        <a href={song_url} target="_blank" className="c-title__link lrv-a-unstyle-link">	
                         {song_name}		
                         </a>
                     </h3>												
@@ -49,7 +49,7 @@ export const TopOne = ({topone}) =>{
 	<div className="js-tabs-nav js-tabs-nav--charts-top lrv-u-flex lrv-u-justify-content-space-between u-justify-content-space-around@mobile-max  lrv-u-padding-b-00@mobile-max" data-tabs-nav="">
 					<button className="c-tab // lrv-u-display-inline-block lrv-a-unstyle-button lrv-a-hover-effect lrv-u-whitespace-nowrap a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-u-cursor-pointer active" data-tabs-target="tab_1">
 	Stats</button>
-		<a href="/posts"><button className="c-tab // lrv-u-display-inline-block lrv-a-unstyle-button lrv-a-hover-effect lrv-u-whitespace-nowrap a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-u-cursor-pointer" data-tabs-target="tab_5">
+		<a href={song_url} target="_blank"><button className="c-tab // lrv-u-display-inline-block lrv-a-unstyle-button lrv-a-hover-effect lrv-u-whitespace-nowrap a-font-primary-bold-xxs lrv-u-text-transform-uppercase lrv-u-cursor-pointer" data-tabs-target="tab_5">
 	Share</button> </a>
 			</div>
 
