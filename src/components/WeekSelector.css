@@ -1,0 +1,16 @@
+.selector{
+    background-color: #101119;
+    display :flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.selector div:last-child {
+    margin-left: auto;
+  }
+
+h2{margin-top:0;margin-bottom:0;padding-top:1.5rem;padding-left:1.5rem;padding-bottom:1.5rem;font-weight:700;}
+[class*=week-word]{font-family:"neue-haas-grotesk-display",Times New Roman,sans-serif;font-weight:500;}
+[class*=week-word]{font-weight:900;}
+.week-word{font-size:1.6875rem;line-height:1.875rem;letter-spacing:0.03375rem;}

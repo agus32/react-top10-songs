@@ -1,7 +1,7 @@
 import React from 'react';
 import { TopOne } from './components/TopOne';
 import { TopTable } from './components/TopTable';
-import { TopTableTest } from './components/TopTableTest';
+import { WeekSelector } from './components/WeekSelector';
 
 const test = "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/3f/28/ad/3f28ad3c-3dc9-7c5b-32f0-5b33eb647bf7/mzi.bnuysrxb.jpg/400x400cc.jpg";
 const week = [{artist:"Merv Wetheril",song_name:"Ultraman",song_url:"https://yolasite.com",song_photo:"https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/4c/5f/08/4c5f08d0-d745-85a3-49e4-607112632378/cover.jpg/316x316cc.webp",weeks_at_top_1:33,weeks_on_chart:131,last_week:6},
@@ -22,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <TopOne topone={week[0]}/>
-      <TopTableTest top={week}/>
+      <WeekSelector/>
+      <TopTable top={week}/>
     </div>
   );
 }
