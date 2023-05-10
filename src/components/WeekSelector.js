@@ -9,7 +9,12 @@ export const WeekSelector = () =>{
                 <h2 className="week-word">Week</h2>
             </div>
             <div>
-                a
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
             </div>
         </div>
     );
