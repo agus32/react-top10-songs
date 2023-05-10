@@ -2,27 +2,7 @@ import React from "react";
 import "./WeekSelector.css";
 import { GetWeekData } from "../ApiHandler";
 
-const weeks = [{
-    cod: 1,
-    date_start: "20210101",
-    date_end: "20210107",
-},
-{
-    cod: 2,
-    date_start: "20210108",
-    date_end: "20210114",
-},
-{
-    cod: 3,
-    date_start: "20210115",
-    date_end: "20210121",
-},
-{
-    cod: 4,
-    date_start: "20210122",
-    date_end: "20210128",
-},
-];
+
 
 const dateFormatter = (date) => {
     const year = date.substring(0,4);
@@ -32,12 +12,13 @@ const dateFormatter = (date) => {
 }
 
 
-export const WeekSelector = () =>{
+export const WeekSelector = ({weeksInfo,setWeek}) =>{
 
 
     const handleChange = async (event) => {
         console.log(event.target.value);
         const response = await GetWeekData(event.target.value);
+        setWeek(response);
     }
 
     return(
@@ -47,7 +28,7 @@ export const WeekSelector = () =>{
             </div>
             <div>
                 <select name="weekSelector" id="weekSelector" onChange={handleChange}>
-                    {weeks.map((week) => (
+                    {weeksInfo.map((week) => (
                         <option value={week.cod}>{dateFormatter(week.date_start)} - {dateFormatter(week.date_end)}</option>
                     ))}
                 </select>
