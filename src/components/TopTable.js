@@ -222,7 +222,7 @@ export const TopTable = ({top}) =>{
 	
 			<div className="lrv-a-crop-1x1 a-crop-67x100@mobile-max" >
 	
-						<img className="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto" src="https://charts-static.billboard.com/img/2023/04/kepersonajes-000-unfindebigonecrossover2-rmb-180x180.jpg" alt="" height="" width="" decoding="async" data-lazy-loaded="1"/>
+						<img className="c-lazy-image__img lrv-u-background-color-grey-lightest lrv-u-width-100p lrv-u-display-block lrv-u-height-auto" src={top[0].song_photo} alt="" height="" width="" decoding="async" data-lazy-loaded="1"/>
 			
 			</div>
 	
