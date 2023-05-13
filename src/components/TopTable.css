@@ -314,6 +314,32 @@ div.admz{margin-left:auto;margin-right:auto;text-align:center;}
 .chart-results-list .admz{margin-bottom:1.25rem;}
 ::placeholder{color:var(--color-white);}
 }
+.a-font-primary-bold-xxs{font-size:0.6875rem;line-height:1.125rem;letter-spacing:0.05125rem;}
+.lrv-u-background-color-grey-dark{background-color:#4c5167;background-color:var(--background-color-grey-dark, rgb(76, 81, 103));}
+.lrv-u-text-align-center{text-align:center;}
+.u-width-40{width:2.5rem;}
+/*! CSS Used from: https://www.billboard.com/wp-content/themes/vip/pmc-billboard-2021/assets/build/css/common.async.css?ver=6.1.1 ; media=all */
+
+@media (min-width: 48rem){
+.u-hidden\@tablet{display:none;height:0;width:0;}
+}
+
+[class*=a-font-primary]{font-family:"neue-haas-grotesk-display",Times New Roman,sans-serif;font-weight:500;}
+[class*=a-font-primary-bold]{font-weight:900;}
+.a-font-primary-bold-xxs{font-size:0.6875rem;line-height:1.125rem;letter-spacing:0.05125rem;}
+.lrv-u-color-grey-darkest{color:#2b2e3c;color:var(--color-grey-darkest, rgb(43, 46, 60));}
+.lrv-u-text-align-center{text-align:center;}
+.u-width-40{width:2.5rem;}
+/*! CSS Used from: https://www.billboard.com/wp-content/themes/vip/pmc-billboard-2021/assets/build/css/common.async.css?ver=6.1.1 ; media=all */
+@media all{
+.u-background-color-yellow{background-color:#fff100;}
+::placeholder{color:var(--color-white);}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:"neue-haas-grotesk-display";src:url('https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3') format('woff2'),          url('https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3') format('woff');font-display:swap;font-style:normal;font-weight:500;}
+@font-face{font-family:neue-haas-grotesk-display;src:url("https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff");font-display:swap;font-style:normal;font-weight:500;}
+@font-face{font-family:neue-haas-grotesk-display;src:url("https://use.typekit.net/af/153042/00000000000000007735bb62/30/l?subset_id=2&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/153042/00000000000000007735bb62/30/d?subset_id=2&fvd=n6&v=3") format("woff");font-display:swap;font-style:normal;font-weight:600;}
+@font-face{font-family:neue-haas-grotesk-display;src:url("https://use.typekit.net/af/c906c2/00000000000000007735bb6e/30/l?subset_id=2&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/c906c2/00000000000000007735bb6e/30/d?subset_id=2&fvd=n9&v=3") format("woff");font-display:swap;font-style:normal;font-weight:900;}
 /*! CSS Used from: https://www.billboard.com/wp-content/themes/vip/pmc-billboard-2021/assets/build/css/single.async.css?ver=6.1.1 ; media=all */
 @media all{
 @media print{

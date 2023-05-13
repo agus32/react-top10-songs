@@ -1,6 +1,6 @@
 
 const API_PORT = 3000;
-const API_URL = "http://localhost.com";
+const API_URL = "http://localhost";
 
 
 export const GetWeeks = async () => {
