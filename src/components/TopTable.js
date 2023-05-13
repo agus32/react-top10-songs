@@ -12,7 +12,7 @@ const ArrowPosition = ({this_week,last_week}) =>{
 							</li>
         );
 
-    }else if(this_week < last_week || last_week == 0){
+    }else if(this_week < last_wee){
         return(
             <li className="o-chart-results-list__item // lrv-u-flex u-flex-grow-1@mobile-max lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center u-width-66 lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<div className="c-svg u-height-26 u-width-26">
@@ -20,7 +20,15 @@ const ArrowPosition = ({this_week,last_week}) =>{
 				
 							</li>
         );
-    }else{
+    }else if(last_week == 0){
+		return(<li class="o-chart-results-list__item // lrv-u-flex u-flex-grow-1@mobile-max lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center u-width-66 lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">			
+		<span class="c-label  u-width-40 a-font-primary-bold-xxs lrv-u-color-grey-darkest u-background-color-yellow lrv-u-text-align-center">		
+		NEW
+		</span>
+		</li>
+		);
+
+	}else{
         return(
             <li className="o-chart-results-list__item // lrv-u-flex u-flex-grow-1@mobile-max lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center u-width-66 lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<div className="c-svg u-height-26 u-width-26">
@@ -41,19 +49,26 @@ const MiniArrowPosition = ({this_week,last_week}) =>{
 			
         );
 
-    }else if(this_week < last_week || last_week == 0){
+    }else if(this_week < last_week){
         return(
             <div className="c-svg u-height-10@mobile-max u-width-10@mobile-max u-hidden@tablet">
 	<svg xmlns="http://www.w3.org/2000/svg" width="10.157" height="10.157"><path data-name="Arrow" d="M5.732 2.43v7.727H4.426V2.43L.923 5.835 0 4.938 5.079 0l5.079 4.938-.923.9z" fill="#00dda1"></path></svg></div>
 			
         );
-    }else{
+    }else if(last_week == 0){
         return(
+			<span class="c-label  u-width-40 a-font-primary-bold-xxs lrv-u-background-color-grey-dark u-color-yellow lrv-u-text-align-center u-hidden@tablet">
+		NEW
+	</span>
+		);
+			
+        
+    }else{
+		return(
             <div className="c-svg u-height-10@mobile-max u-width-10@mobile-max u-hidden@tablet">
 	<svg xmlns="http://www.w3.org/2000/svg" width="10.157" height="10.157"><path data-name="Arrow" d="M4.425 7.727V0h1.306v7.727l3.503-3.405.923.897-5.079 4.938-5.079-4.938.923-.9z" fill="#fb676b"></path></svg></div>
-			
-        );
-    }
+		);
+	}
 
 }
 
@@ -189,7 +204,7 @@ export const TopTable = ({top}) =>{
 	
 <span className="c-span  a-font-primary-medium-xxs u-font-size-11@mobile-max u-letter-spacing-00 u-line-height-125 lrv-u-display-block">
 
-	Weeks at no. 1
+	Peak Pos.
 </span>
 
 	</div>
@@ -267,7 +282,7 @@ export const TopTable = ({top}) =>{
 									<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	{top[0].weeks_at_top_1}
+	{top[0].peak_pos}
 </span>
 					</li>
 				
@@ -298,7 +313,7 @@ export const TopTable = ({top}) =>{
 															<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-bold-l a-font-primary-m@mobile-max u-font-weight-normal@mobile-max lrv-u-padding-tb-050@mobile-max u-font-size-32@tablet">
 	
-	{top[0].weeks_at_top_1}
+	{top[0].peak_pos}
 </span>
 								</li>
 							
@@ -387,7 +402,7 @@ export const TopTable = ({top}) =>{
 									<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	{song.weeks_at_top_1}	
+	{song.peak_pos}	
 </span>
 					</li>
 				
@@ -418,7 +433,7 @@ export const TopTable = ({top}) =>{
 															<li className="o-chart-results-list__item // a-chart-bg-color a-chart-color u-width-72 u-width-55@mobile-max u-width-55@tablet-only lrv-u-flex lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center lrv-u-background-color-grey-lightest lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light lrv-u-flex-grow-1">
 												<span className="c-label  a-font-primary-m lrv-u-padding-tb-050@mobile-max">
 	
-	{song.weeks_at_top_1}
+	{song.peak_pos}
 </span>
 								</li>
 							
