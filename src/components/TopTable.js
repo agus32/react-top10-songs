@@ -12,7 +12,7 @@ const ArrowPosition = ({this_week,last_week}) =>{
 							</li>
         );
 
-    }else if(this_week < last_wee){
+    }else if(this_week < last_week){
         return(
             <li className="o-chart-results-list__item // lrv-u-flex u-flex-grow-1@mobile-max lrv-u-flex-shrink-0 lrv-u-align-items-center lrv-u-justify-content-center u-width-66 lrv-u-border-b-1 u-border-b-0@mobile-max lrv-u-border-color-grey-light u-hidden@mobile-max">
 									<div className="c-svg u-height-26 u-width-26">
